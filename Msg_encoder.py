@@ -29,7 +29,7 @@ def printtext():
     file.close()
     return string   
 
-label = Tk.Label(text="Enter Message",width=30,height=5,bg = "black",fg="yellow")
+label = Tk.Label(text="Enter Message",width=30,height=5,bg = "black",fg="green")
 label.config(font=("Courier",13))
 label.pack()
 entry = Tk.Entry(window)
