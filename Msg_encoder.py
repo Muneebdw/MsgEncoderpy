@@ -1,6 +1,5 @@
 import tkinter as Tk
 from cryptography import fernet
-import hashlib
 
 string=""
 
