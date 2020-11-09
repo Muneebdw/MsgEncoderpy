@@ -18,13 +18,13 @@ heading.pack()
 def printtext():
     global entry
     string = entry.get() 
-    name = str(string)
-    name =name.encode()
-    enc_msg = f1.encrypt(name)
+    msg = str(string)
+    msg_en =msg.encode()
+    enc_msg = f1.encrypt(msg_en)
     lb = Tk.Label(text=enc_msg,height=5,bg="black",fg="red")
     lb.pack()
     file = open('enc.txt','a')
-    file.writelines(str(enc_msg)+'\n')
+    file.writelines(msg+ "  enc: " + str(enc_msg)+'\n')
     file.close()
     return string   
 
